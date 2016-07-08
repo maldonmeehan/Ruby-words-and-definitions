@@ -10,7 +10,8 @@ _An Epicodus student project to practice Object-Oriented Ruby. The project was t
 
 ## Setup/Installation Requirements
 
-* _Visit Heroku to view this app_
+* _Open a web browser_
+* _Visit <a href="https://secure-falls-55504.herokuapp.com/">App on Heroku</a>_
 
 ## Known Bugs
 
