@@ -1,0 +1,20 @@
+<h1>Your Dictionary!</h1>
+
+<p>Here are your words:</p>
+
+<ul>
+  <% @words.each() do |word| %>
+  <li><%= word.list() %></li>
+  <% end %>
+</ul>
+
+<p>Add another word!</p>
+
+<form action="/confirmation" method="post">
+  <label for="word">Word</label>
+  <input require id="word" name="word" type="text">
+  <label for="definition">Definition</label>
+  <input require id="definition" name="definition" type="text">
+
+  <button type="submit">Add</button>
+</form>
