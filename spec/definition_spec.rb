@@ -32,3 +32,11 @@ end
       expect(Definition.all()).to(eq([test_definition]))
     end
   end
+
+  describe(".clear") do
+    it("empties out all of the saved definitions") do
+      Definition.new("A Hash is a dictionary-like collection of unique keys and their values.", "Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type.").save()
+      Definition.clear()
+      expect(Definition.all()).to(eq([]))
+    end
+  end
