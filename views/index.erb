@@ -1,0 +1,13 @@
+<h1>Your Dictionary!</h1>
+
+<form action="/new_word" class="" method="get">
+  <button id="new_word" type="submit" class="btn btn-primary btn-lg" name="button">Add New Word</button>
+</form>
+
+<p>Here are your words:</p>
+
+<ul>
+  <% @words.each() do |word| %>
+  <li><%= word.list() %></li>
+  <% end %>
+</ul>
