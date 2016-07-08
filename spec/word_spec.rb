@@ -16,4 +16,13 @@ describe("#word") do
     it("is empty at first") do
       expect(Word.all()).to(eq([]))
     end
+
+    describe("#save") do
+      it("adds a word to the array of saved words") do
+        test_word = Word.new("Object")
+        test_word.save()
+        expect(Word.all()).to(eq([test_word]))
+      end
+    end
+    
   end
