@@ -14,3 +14,8 @@ post("/confirmation") do
   word.save()
   erb(:confirmation)
 end
+
+get('/definition') do
+  @definitions = Definition.all()
+  erb(:definition)
+end

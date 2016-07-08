@@ -8,6 +8,6 @@ describe('the word path', {:type => :feature}) do
     visit('/')
     fill_in('word', :with => "Hash")
     click_button('Add')
-    expect(page).to have_content("Your word has been successfully submitted!")
+    expect(page).to have_content("Your word and definition have been successfully submitted!")
   end
 end

@@ -1,0 +1,9 @@
+<h1>Your Definitions!</h1>
+
+<p>Here are your definitions:</p>
+
+<ul>
+  <% @definitions.each() do |definition| %>
+  <li><%= definition.list() %></li>
+  <% end %>
+</ul>
