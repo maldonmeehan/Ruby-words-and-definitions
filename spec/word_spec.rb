@@ -16,6 +16,7 @@ end
     it("is empty at first") do
       expect(Word.all()).to(eq([]))
     end
+  end
 
     describe("#save") do
       it("adds a word to the array of saved words") do
@@ -32,4 +33,3 @@ end
         expect(Word.all()).to(eq([]))
       end
     end
-  end
