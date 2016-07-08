@@ -8,6 +8,6 @@ get("/") do
   erb(:index)
 end
 
-get('new_word_form') do
+get('/new_word_form') do
   erb(:new_word_form)
 end
