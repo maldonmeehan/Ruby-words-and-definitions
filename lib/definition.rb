@@ -21,5 +21,8 @@ class Definition
   define_method(:save) do
     @@all_definitions.push(self)
   end
-  
+
+  define_singleton_method(:clear) do
+    @@all_definitions = []
+  end
 end
