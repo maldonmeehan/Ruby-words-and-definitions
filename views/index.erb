@@ -1,9 +1,5 @@
 <h1>Your Dictionary!</h1>
 
-<form action="/new_word_form" class="word_form" method="get">
-  <button id="new_word_form" type="submit" class="btn btn-primary btn-lg" name="button">Add New Word</button>
-</form>
-
 <p>Here are your words:</p>
 
 <ul>
@@ -11,3 +7,15 @@
   <li><%= word.list() %></li>
   <% end %>
 </ul>
+
+<p>Add another word!</p>
+
+<form action="/confirmation" method="post">
+  <label for="word">Word:</label>
+  <input require id="word" name="word" type="text">
+
+  <label for="input_definition1">Definition:</label>
+  <input type="text" name="input_definition1" required>
+
+    <button type="submit" class="btn btn-primary btn-lg" name="Add Word">Add Word</button>
+</form>
