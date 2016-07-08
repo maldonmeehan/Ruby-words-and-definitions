@@ -11,3 +11,10 @@ end
 get('/new_word_form') do
   erb(:new_word_form)
 end
+
+post("/confirmation") do
+  list = params.fetch("word")
+  word = Word.new(list)
+  word.save()
+  erb(:confirmation)
+end
