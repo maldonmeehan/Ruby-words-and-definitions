@@ -1,8 +1,8 @@
-##_Ruby | Object-Oriented Ruby Independent Project _
+## Object-Oriented Ruby - Independent Project
 
-#### _{Brief description of application}, {Date of current version}_
+#### _An app that allows a user to create words and definitions, July 8, 2016_
 
-#### By _**Maldon Meehan & Noah Yasskin**_
+#### By _**Maldon Meehan**_
 
 ## Description
 
@@ -19,20 +19,17 @@ _{No known bugs at this point_
 
 ## Support and contact details
 
-_If you have any questions please feel free to contact Maldon or Noah on github_
+_If you have any questions please feel free to contact Maldon on github_
 
 ## Technologies Used
 
 * _Ruby_
 * _Sinatra_
+* _Rspec_
 * _HTML_
 * _Heroku_
 * _CSS_     
 * _Bootstrap_
-* _Atom_
-* _Terminal_
-* _Git_
-
 
 ### License
 
