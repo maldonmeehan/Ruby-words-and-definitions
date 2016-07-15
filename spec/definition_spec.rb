@@ -39,4 +39,14 @@ describe('definition') do
     end
   end
 
+  describe("#id") do
+    it("returns a unique id for a definition") do
+      test_definition1 = Definition.new("A Hash is a dictionary-like collection of unique keys and their values.")
+      test_definition1.save()
+      test_definition2 = Definition.new("It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.")
+      test_definition2.save()
+      expect(test_definition2.id()).to(eq(2))
+    end
+  end
+
 end
