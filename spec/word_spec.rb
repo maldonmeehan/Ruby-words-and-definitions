@@ -1,5 +1,6 @@
 require('rspec')
 require('word')
+require('definition')
 
 describe('Word') do
   before() do
@@ -9,7 +10,7 @@ end
   describe("#word") do
     it("lets the user add a word") do
       test_word = Word.new("Hash")
-      expect(test_word.list()).to(eq("Hash"))
+      expect(test_word.name()).to(eq("Hash"))
     end
   end
 

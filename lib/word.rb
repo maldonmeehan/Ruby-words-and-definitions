@@ -1,12 +1,12 @@
 class Word
   @@all_words = []
 
-  define_method(:initialize) do |list|
-    @list = list
+  define_method(:initialize) do |name|
+    @name = name
   end
 
-  define_method(:list) do
-    @list
+  define_method(:name) do
+    @name
   end
 
   define_singleton_method(:all) do
