@@ -1,4 +1,4 @@
-<h3><%= @word.name() %></h3>
+<h2><%= @word.name() %></h2>
 
 <%@word.entries().each() do |definition, i|%>
 <ul>
@@ -7,5 +7,7 @@
 </ul>
 <% end %>
 
-<p><a href="/words/<%=@word.id()%>/definitions/new">Add a definition</a></p>
-<p><a href="/">Home</a></p>
+<div class="links">
+  <p><a href="/words/<%=@word.id()%>/definitions/new">Add a definition</a></p>
+  <p><a href="/">Home</a></p>
+</div>
