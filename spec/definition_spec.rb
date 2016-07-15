@@ -2,8 +2,13 @@ require('rspec')
 require('definition')
 
 describe('definition') do
+  before() do
+    Definition.clear()
+  end
 
-end
+  after() do
+    Definition.clear()
+  end
 
   describe("#definition") do
     it("lets the user add a definition") do
@@ -33,3 +38,5 @@ end
       expect(Definition.all()).to(eq([]))
     end
   end
+
+end
