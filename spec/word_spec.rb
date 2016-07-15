@@ -35,4 +35,15 @@ end
         expect(Word.all()).to(eq([]))
       end
     end
+
+    describe("#id") do
+      it("returns a unique id for a word") do
+        test_word1 = Word.new("Hash")
+        test_word1.save()
+        test_word2 = Word.new("Object")
+        test_word2.save()
+        expect(test_word2.id()).to(eq(2))
+      end
+    end
+
   end
