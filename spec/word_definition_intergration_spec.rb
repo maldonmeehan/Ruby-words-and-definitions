@@ -18,9 +18,14 @@ describe("the create a word route", {:type => :feature}) do
     click_button("Add")
     expect(page).to have_content("Hash")
   end
+
+  it("allows a user to view their list of words") do
+    visit('/')
+    expect(page).to have_content("Here are your words:")
+  end
 end
 
-describe("the defintion route", {:type => :feature}) do
+describe("the add a defintion route", {:type => :feature}) do
   it("takes the user to a page where they can enter a deifintion") do
     visit('/')
     click_link("Hash")
