@@ -1,17 +1,13 @@
 class Definition
   @@all_definitions = []
 
-  define_method(:initialize) do |description1, description2|
-    @description1 = description1
-    @description2 = description2
+  define_method(:initialize) do |definition|
+    @definition = definition
+
   end
 
-  define_method(:description1) do
-    @description1
-  end
-
-  define_method(:description2) do
-    @description2
+  define_method(:definition) do
+    @definition
   end
 
   define_singleton_method(:all) do

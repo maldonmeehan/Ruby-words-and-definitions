@@ -46,4 +46,13 @@ end
       end
     end
 
+    describe(".definitions") do
+      it("returns a word object with a one definition") do
+        test_word1 = Word.new("Hash")
+        test_word1.save()
+        test_definition1 = Definition.new("A Hash is a dictionary-like collection of unique keys and their values.")
+        test_word1.push_definition(test_definition1)
+        expect(test_word1.entries()).to(eq([test_definition1]))
+      end
+    end
   end
