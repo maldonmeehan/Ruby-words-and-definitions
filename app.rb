@@ -32,7 +32,7 @@ end
 
 post('/definitions') do
   @definition_main = params.fetch('definition_main')
-  @definition = Definition.new({:definition_main => @definition_main})
+  @definition = Definition.new(@definition_main)
   @definition.save()
   @word = Word.find(params.fetch('word_id').to_i())
   @word.add_definition(@definition)
