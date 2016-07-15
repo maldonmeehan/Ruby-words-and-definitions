@@ -7,8 +7,8 @@ describe("the word route", {:type => :feature}) do
   it("takes the user to a page where they can enter a word") do
     visit('/')
     click_link("Add A Word")
-    # fill_in("name", :with => "Hash")
-    # click_button("Add")
-    # expect(page).to have_content("Hash")
+    fill_in("name", :with => "Hash")
+    click_button("Add")
+    expect(page).to have_content("Hash")
   end
 end
