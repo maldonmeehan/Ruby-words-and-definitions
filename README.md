@@ -11,6 +11,10 @@ _An Epicodus student project to practice Object-Oriented Ruby. The project was t
 ## Setup/Installation Requirements
 
 * _Open a web browser_
+* _Clone this repository onto your computer_
+* _Run bundle install in your project directory to ensure all gems are installed._
+* _Run ruby app.rb in your project directory to start Sinatra_
+* _Open a browser of your choice to localhost:4567_
 * _Visit <a href="#">App on Heroku</a>_
 
 ## Known Bugs
