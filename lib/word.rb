@@ -10,6 +10,14 @@ class Word
     @name
   end
 
+  define_method(:entries) do
+    @entries
+  end
+
+  define_method(:id) do
+    @id
+  end
+
   define_singleton_method(:all) do
     @@all_words
   end
@@ -22,8 +30,10 @@ class Word
     @@all_words = []
   end
 
-  define_method(:id) do
-    @id
+  define_method(:push_definition) do |definition|
+    @entries = []
+    @entries.push(definition)
   end
+
 
 end
