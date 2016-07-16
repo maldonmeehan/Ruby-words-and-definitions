@@ -2,5 +2,15 @@
 
 <h5>Your word "<%= @word.name() %>" has been created.</h5>
 
-<p><a href="/words/<%= @word.id() %>/definitions/new">Add a definition for "<%= @word.name() %>"</a></p>
-<p><a href="/">View Words</a></p>
+<p>
+  <a href ="/words/<%=@word.id()%>/definitions/new">Add a definition</a>
+</p>
+
+<p>
+  <a href="/words/new">Add Another Word</a>
+</p>
+
+
+<p>
+  <a href="/">View Words</a>
+</p>
