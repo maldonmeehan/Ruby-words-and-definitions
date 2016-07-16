@@ -1,11 +1,11 @@
 <h2>Success!</h2>
 
-<h5>Your definition for "<% @word.name() %>" has been added.</h5>
+<h5> Your definition for "<%= @word.name()%>" has been added.</h5>
 
 <ul>
-  <li>Deffintion: <% @definition_main %></li>
+  <li>Definition: <%= @definition_one%></li>
 </ul>
 
-<p><a href="/words/<%= @word.id() %>/definitions/new">Add a definition</a></p>
-<p><a href="/words/<%= @word.id() %>">Show a definitions for "<%= @word.name() %>"</p>
-<p><a href="/">Home</a></p>
+<p><a href='/words/<%=@word.id()%>/definitions/new'>Add Another Definition</a></p>
+<p><a href='/words/<%=@word.id()%>'>Show All Definitions for "<%= @word.name()%>"</a></p>
+<p><a href='/'>Home</a></p>

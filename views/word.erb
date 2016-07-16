@@ -1,11 +1,11 @@
 <h2><%= @word.name() %></h2>
 
-<%@word.entries().each() do |definition, i|%>
+<%@word.definition_entries().each() do |definition, i|%>
 <ul>
   <li>Definition:</li>
-  <li>"<%= definition.definition_main() %>"</li>
+  <li>"<%=definition.definition_one()%>"</li>
 </ul>
 <% end %>
 
-<p><a href="/words/<%= @word.id() %>/definitions/new">Add a definition</a></p>
-<p><a href="/">Home</a></p>
+<p><a href='/words/<%=@word.id()%>/definitions/new'>Add a Definition</a></p>
+<p><a href='/'>Home</a></p>

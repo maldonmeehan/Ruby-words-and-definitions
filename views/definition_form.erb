@@ -1,8 +1,8 @@
-<h2>Add a defintion for "<%= @word.name() %>":</h2>
+<h2>Add a definition for "<%= @word.name() %>":</h2>
 
 <form action='/definitions' method='post'>
   <input id='word_id' name='word_id' type='hidden' value='<%= @word.id() %>'>
-  <label for="definition_main">Enter a definition:</label>
-  <input id="definition_main" name="definition_main" type="text">
-  <button type="submit">Add A Definition</button>
+  <label for="definition-one">Give me the definition:</label>
+  <input type="text" name="definition-one" id="definition-one" class="form-control">
+  <button type="submit" class="btn btn-info">Add Definition</button>
 </form>

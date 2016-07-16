@@ -1,13 +1,12 @@
-  <% if @words.length().>(0) %>
-    <h2>Here are your words:</h2>
-    <ul>
-      <% @words.each() do |word| %>
-      <li><a href="/words/<%= word.id() %>"><%= word.name() %></a></li>
-      <% end %>
-    </ul>
-    <p><a href="/words/new">Add A Word</a></p>
+<% if @words.length().>(0) %>
+  <h2>Here are you words:</h2>
+  <ul>
+    <%@words.each() do |word|%>
+    <li><a href='/words/<%= word.id() %>'><%= word.name() %></a></li>
+    <%end%>
+  </ul>
+  <p><a href='/words/new'>Add Another Word</a></p>
 
-    <% else %>
-    <h2>There are no words:</h2>
-    <p><a href='/words/new'>Add A Word</a></p>
-  <% end %>
+  <% else %>
+  <p><a href='/words/new'>Add a Word</a></p>
+<% end %>
