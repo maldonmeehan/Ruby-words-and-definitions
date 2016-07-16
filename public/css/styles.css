@@ -8,9 +8,21 @@ h1 {
   text-align: center;
 }
 
+h2 {
+
+}
+
 ul {
   list-style: none;
   font-size: 1.5em;
+}
+
+a {
+  font-size: 1em;
+}
+
+#nav {
+  text-align: right;
 }
 
 .header {
@@ -18,7 +30,8 @@ ul {
 }
 
 .footer {
-  text-align: center;
+  text-align: left;
+  color: #b2b2b2;
 }
 
 .jumbotron {
@@ -29,4 +42,8 @@ ul {
   background-repeat: no-repeat;
   color: #b2b2b2;
   text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.btn {
+  margin-top: 10px;
 }

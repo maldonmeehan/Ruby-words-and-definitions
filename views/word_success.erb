@@ -1,11 +1,12 @@
 <h2>Success!</h2>
 
-<h5>Your word "<%= @word.name() %>" has been created.</h5>
+<h3>Your word "<%= @word.name() %>" has been created</h3>
 
 <%@word.definition_entries().each() do |definition, i|%>
   <p>Definition:</p>
   <p>"<%=definition.definition_one()%>"</p>
 <% end %>
 
-<p><a href='/words/<%=@word.id()%>/definitions/new'>Add a Definition</a></p>
-<p><a href='/'>View Words</a></p>
+<ul>
+  <li><a href='/words/<%=@word.id()%>/definitions/new'>Add a Definition</a></li>
+</ul>

@@ -1,12 +1,18 @@
 <% if @words.length().>(0) %>
-  <h2>Here are you words:</h2>
+  <h2>Here are your words:</h2>
+  <b></b>
   <ul>
     <%@words.each() do |word|%>
     <li><a href='/words/<%= word.id() %>'><%= word.name() %></a></li>
     <%end%>
   </ul>
-  <p><a href='/words/new'>Add Another Word</a></p>
+  <ul>
+    <li><a href='/words/new'>Add Another Word</a></li>
+  </ul>
 
   <% else %>
-  <p><a href='/words/new'>Add a Word</a></p>
+  <h2>There are no words in your Dictionary</h2>
+  <ul>
+    <li><a href='/words/new'>Add a Word</a></li>
+  </ul>
 <% end %>
