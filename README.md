@@ -15,7 +15,7 @@ _An Epicodus student project to practice Object-Oriented Ruby. The project was t
 * _Run bundle install in your project directory to ensure all gems are installed._
 * _Run ruby app.rb in your project directory to start Sinatra_
 * _Open a browser of your choice to localhost:4567_
-* _Visit <a href="https://infinite-escarpment-62909.herokuapp.com/">App on Heroku</a>_
+* _Visit <a href="https://infinite-dawn-43538.herokuapp.com/</a>_
 
 ## Known Bugs
 
